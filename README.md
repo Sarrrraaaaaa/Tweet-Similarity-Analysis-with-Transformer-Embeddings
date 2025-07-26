@@ -1,4 +1,4 @@
-# Tweet-Similarity-Analysis-with-Transformer-Embeddings
+
 # Tweet Similarity Analysis with Transformer Embeddings
 
 This project analyzes the similarity between tweets using Word2Vec embeddings and standard evaluation metrics.
