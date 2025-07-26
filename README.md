@@ -1,24 +1,57 @@
 # Tweet-Similarity-Analysis-with-Transformer-Embeddings
-This project aims to perform text similarity analysis using Word2Vec embeddings.
-## Introduction
-This project utilizes pre-trained Word2Vec embeddings to calculate text similarity between pairs of texts. It includes preprocessing steps such as tokenization, removing stopwords, and lemmatization before computing the similarity scores.
-## Installation
-To run this project, ensure you have the necessary dependencies installed. You can install the required Python packages using pip:
+# Tweet Similarity Analysis with Transformer Embeddings
 
-####                      pip install pandas numpy nltk scikit-learn gensim
-Additionally, download the NLTK tokenizer resource by running the following command:
+This project analyzes the similarity between tweets using Word2Vec embeddings and standard evaluation metrics.
 
-####        import nltk
-####        nltk.download('punkt')
+## Project Structure
 
+- [`code.py`](Tweet-Similarity-Analysis-with-Transformer-Embeddings-main/code.py): Main script for preprocessing, pair generation, embedding calculation, and similarity evaluation.
+- `train-modifier.xlsx`: Training data containing tweets and users.
+- `testmodifier.xlsx`: Test data.
+- `Tweet Similarity Analysis with Transformer.pdf`: Project documentation or report.
 
-## Dataset
-The project uses two Excel files as datasets:
+## Requirements
 
-#### train_modifier.xlsx: Contains the training data.
-#### testmodifier.xlsx: Contains the test data.
-Ensure the datasets are formatted correctly with the required columns (text, user, etc.) before running the code.
+- Python 3.x
+- The following libraries:
+  - pandas
+  - numpy
+  - nltk
+  - scikit-learn
+  - gensim
+  - openpyxl
 
-## Results
-The project evaluates the text similarity model using precision, recall, and F1 score metrics on both the training and test datasets. 
+Install them with:
 
+```sh
+pip install pandas numpy nltk scikit-learn gensim openpyxl
+```
+
+## Usage
+
+1. Place your data files (`train-modifier.xlsx` and `testmodifier.xlsx`) in the project folder.
+2. Adjust the file paths in [`code.py`](Tweet-Similarity-Analysis-with-Transformer-Embeddings-main/code.py) if necessary.
+3. Run the main script:
+
+```sh
+python code.py
+```
+
+The script will display precision, recall, and F1 metrics for both training and test data.
+
+## Main Features
+
+- Preprocessing of tweets (lowercasing, punctuation removal, stopwords, lemmatization)
+- Generation of same-user and different-user tweet pairs
+- Word2Vec embedding calculation for each tweet
+- Similarity calculation using Manhattan distance
+- Evaluation with precision, recall, and F1-score
+
+## Notes
+
+- The Word2Vec model used is `word2vec-google-news-300` downloaded via Gensim.
+- File paths are currently set for Google Colab. Adjust them for your local environment if needed.
+
+## Author
+
+This project was developed for tweet similarity analysis using
