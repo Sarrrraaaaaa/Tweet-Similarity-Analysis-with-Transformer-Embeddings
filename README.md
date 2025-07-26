@@ -8,7 +8,7 @@ This project analyzes the similarity between tweets using Word2Vec embeddings an
 - [`code.py`](Tweet-Similarity-Analysis-with-Transformer-Embeddings-main/code.py): Main script for preprocessing, pair generation, embedding calculation, and similarity evaluation.
 - `train-modifier.xlsx`: Training data containing tweets and users.
 - `testmodifier.xlsx`: Test data.
-- `Tweet Similarity Analysis with Transformer.pdf`: Project documentation or report.
+
 
 ## Requirements
 
